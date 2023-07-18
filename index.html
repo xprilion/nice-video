@@ -1,9 +1,9 @@
-<video autoplay loop id="myVideo">
+<video loop id="myVideo">
   <source src="https://smarterchild.chat/video/video.mp4" type="video/mp4">
 </video>
 <div class="content">
   <!-- Use a button to pause/play the video with JavaScript -->
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <button id="myBtn" onclick="myFunction()">Play</button>
 </div>
 <style>
 #myVideo {
@@ -16,11 +16,13 @@
   /* Add some content at the bottom of the video/page */
 .content {
   position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  background: rgba(0, 0, 0, 1);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
+  height: 100%;
 }
 
 /* Style the button used to pause/play the video */
@@ -29,7 +31,7 @@
   font-size: 18px;
   padding: 10px;
   border: none;
-  background: #000;
+  background: #1288ff;
   color: #fff;
   cursor: pointer;
 }
