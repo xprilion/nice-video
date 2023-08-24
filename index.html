@@ -1,66 +1,14 @@
-<video loop id="myVideo">
-  <source src="https://smarterchild.chat/video/video.mp4" type="video/mp4">
-</video>
-<div class="content">
-  <!-- Use a button to pause/play the video with JavaScript -->
-  <button id="myBtn" onclick="myFunction()">Play</button>
-</div>
-<style>
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-  /* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  margin: auto;
-  background: rgba(0, 0, 0, 1);
-  color: #f1f1f1;
-  width: 100%;
-  height: 100%;
-}
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #1288ff;
-  color: #fff;
-  cursor: pointer;
-}
+   <div class="player">
+     <video class="player__video viewer" src="https://smarterchild.chat/video/video.mp4"></video>
+   </div>
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-</style>
-  <script>
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-    document.getElementsByClassName("content")[0].style.display="none";
-
-  } else {
-  document.getElementsByClassName("content")[0].style.display="block";
-
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
+  <script src="scripts.js"></script>
+</body>
+</html>
